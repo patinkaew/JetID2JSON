@@ -14,6 +14,6 @@ if __name__ == "__main__":
     with open(args.jetID_spec_json_file[0]) as f:
         jetId_tasks = json.load(f)
     
-    corrSet = create_jetId_correctionSet(jetId_tasks, description=args.description)
-    write_correctionSet(corrSet, args.out_filename, args.write_gzip)
+    corrSet = create_jetId_correctionSet(jetId_tasks, description=args.description[0])
+    write_correctionSet(corrSet, args.out_filename[0], args.write_gzip)
 
